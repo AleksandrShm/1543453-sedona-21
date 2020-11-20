@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: @white;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: @blue;
+
+  &:hover,
+  &:focus {
+    color: @white;
+    background-color: @dark-blue;
+  }
+
+  &:active {
+    color: @white-op30;
+    background-color: @darkest-blue;
+  }
+
+  &:disabled {
+    color: @white;
+    background-color: @light-grey;
+  }
+}
+
+.button--booking {
+  padding: 15px 32px 17px 32px;
+}
