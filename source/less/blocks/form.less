@@ -10,8 +10,6 @@
 
 .form__legend {
   color: @black;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -23,19 +21,22 @@
   list-style: none;
 }
 
+.form__item-tel::after,
+.form__item-email::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 58px;
+  height: 58px;
+  background-color: @lightest-grey-input-image;
+}
+
 .form__label {
-  color: @black-grey;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
   line-height: 26px;
 
   &--radio,
   &--checkbox {
     color: @black;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
@@ -44,8 +45,7 @@
 }
 
 .form__input {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
+  font-family: @font-family;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -76,8 +76,7 @@
 }
 
 .form__feedback-field {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
+  font-family: @font-family;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;

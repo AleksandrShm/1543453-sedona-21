@@ -29,15 +29,15 @@
       </a>
     </nav>
     <div class="page-header__intro page-header__intro--small">
-      <img class="page-header__text-image page-header__text-image--small" src="https://via.placeholder.com/229x39" width="229" height="39" alt="Sedona">
+      <img src="https://via.placeholder.com/229x39" class="page-header__text-image page-header__text-image--small" width="229" height="39" alt="Sedona">
     </div>
   </header>
 
   <main class="page-main">
 
     <section class="slogan">
-      <h2 class="slogan-title">Оставьте свой отзыв</h2>
-      <p class="slogan-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <h2 class="slogan__title title">Оставьте свой отзыв</h2>
+      <p class="slogan__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
 
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST">
@@ -62,15 +62,13 @@
       <fieldset class="form__fieldset">
         <legend class="form__legend">Контактная информация:</legend>
         <ul class="form__list">
-          <li class="form__item">
+          <li class="form__item form__item-tel">
             <label class="form__label" for="tel">Контактный телефон<sup>*</sup>:</label>
-            <input class="form__input form__input--tel" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
-            <div class="form__input-image"></div>
+            <input class="form__input" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
           </li>
-          <li class="form__item">
+          <li class="form__item form__item-email">
             <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
-            <input class="form__input form__input--email" id="email" type="email" name="email" placeholder="Введите e-mail" required>
-            <div class="form__input-image"></div>
+            <input class="form__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
           </li>
         </ul>
       </fieldset>
@@ -131,20 +129,20 @@
     <a href="blank.html" class="page-footer__hashtag">#VISITSEDONA</a>
     <ul class="social">
       <li class="social__item">
-        <a href="twitter.com" class="social__link">Twitter</a>
+        <a href="http://twitter.com" class="social__link">Twitter</a>
       </li>
       <li class="social__item">
-        <a href="facebook.com" class="social__link">Facebook</a>
+        <a href="http://facebook.com" class="social__link">Facebook</a>
       </li>
       <li class="social__item">
-        <a href="youtube.com" class="social__link">Youtube</a>
+        <a href="http://youtube.com" class="social__link">Youtube</a>
       </li>
     </ul>
     <div class="copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
-        <img class="copyright__link-logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        <img src="img/htmlacademy.svg" class="copyright__link-logo" width="27" height="34" alt="HTML Academy">
       </a>
     </div>
   </footer>
