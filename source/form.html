@@ -2,13 +2,14 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 <body class="page-body">
 
   <header class="page-header">
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
@@ -28,15 +29,15 @@
       </a>
     </nav>
     <div class="page-header__intro page-header__intro--small">
-      <img class="page-header__text-image page-header__text-image--small" src="https://via.placeholder.com/229x39" width="229" height="39" alt="Sedona">
+      <img src="https://via.placeholder.com/229x39" class="page-header__text-image page-header__text-image--small" width="229" height="39" alt="Sedona">
     </div>
   </header>
 
   <main class="page-main">
 
     <section class="slogan">
-      <h2 class="slogan-title">Оставьте свой отзыв</h2>
-      <p class="slogan-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <h2 class="slogan__title title">Оставьте свой отзыв</h2>
+      <p class="slogan__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
 
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST">
@@ -61,11 +62,11 @@
       <fieldset class="form__fieldset">
         <legend class="form__legend">Контактная информация:</legend>
         <ul class="form__list">
-          <li class="form__item">
+          <li class="form__item form__item--tel">
             <label class="form__label" for="tel">Контактный телефон<sup>*</sup>:</label>
             <input class="form__input" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
           </li>
-          <li class="form__item">
+          <li class="form__item form__item--email">
             <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
             <input class="form__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
           </li>
@@ -76,16 +77,16 @@
         <legend class="form__legend">Ваше общее впечатление:</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="form__input" id="positive" type="radio" name="impression" value="positive" checked>
-            <label class="form__label" for="positive">Скорее положительное</label>
+            <input class="form__radio" id="positive" type="radio" name="impression" value="positive" checked>
+            <label class="form__label form__label--radio" for="positive">Скорее положительное</label>
           </li>
           <li class="form__item">
-            <input class="form__input" id="negative" type="radio" name="impression" value="negative">
-            <label class="form__label" for="negative">Скорее отрицательное</label>
+            <input class="form__radio" id="negative" type="radio" name="impression" value="negative">
+            <label class="form__label form__label--radio" for="negative">Скорее отрицательное</label>
           </li>
           <li class="form__item">
-            <input class="form__input" id="neutral" type="radio" name="impression" value="neutral">
-            <label class="form__label" for="neutral">Затрудняюсь ответить</label>
+            <input class="form__radio" id="neutral" type="radio" name="impression" value="neutral">
+            <label class="form__label form__label--radio" for="neutral">Затрудняюсь ответить</label>
           </li>
         </ul>
       </fieldset>
@@ -94,20 +95,20 @@
         <legend class="form__legend">Посещенные достопримечательности:</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="form__input" id="devils-bridge" type="checkbox" name="devils-bridge" checked>
-            <label class="form__label" for="devils-bridge">Мост Дьявола</label>
+            <input class="form__checkbox" id="devils-bridge" type="checkbox" name="devils-bridge" checked>
+            <label class="form__label form__label--checkbox" for="devils-bridge">Мост Дьявола</label>
           </li>
           <li class="form__item">
-            <input class="form__input" id="mountain-bell" type="checkbox" name="mountain-bell" checked>
-            <label class="form__label" for="mountain-bell">Гора-Колокол</label>
+            <input class="form__checkbox" id="mountain-bell" type="checkbox" name="mountain-bell" checked>
+            <label class="form__label form__label--checkbox" for="mountain-bell">Гора-Колокол</label>
           </li>
           <li class="form__item">
-            <input class="form__input" id="slide-park" type="checkbox" name="slide-park" checked>
-            <label class="form__label" for="slide-park">Слайд-парк</label>
+            <input class="form__checkbox" id="slide-park" type="checkbox" name="slide-park" checked>
+            <label class="form__label form__label--checkbox" for="slide-park">Слайд-парк</label>
           </li>
           <li class="form__item">
-            <input class="form__input" id="red-rocks" type="checkbox" name="red-rocks">
-            <label class="form__label" for="red-rocks">Красные скалы</label>
+            <input class="form__checkbox" id="red-rocks" type="checkbox" name="red-rocks">
+            <label class="form__label form__label--checkbox" for="red-rocks">Красные скалы</label>
           </li>
         </ul>
       </fieldset>
@@ -128,20 +129,20 @@
     <a href="blank.html" class="page-footer__hashtag">#VISITSEDONA</a>
     <ul class="social">
       <li class="social__item">
-        <a href="twitter.com" class="social__link">Twitter</a>
+        <a href="http://twitter.com" class="social__link">Twitter</a>
       </li>
       <li class="social__item">
-        <a href="facebook.com" class="social__link">Facebook</a>
+        <a href="http://facebook.com" class="social__link">Facebook</a>
       </li>
       <li class="social__item">
-        <a href="youtube.com" class="social__link">Youtube</a>
+        <a href="http://youtube.com" class="social__link">Youtube</a>
       </li>
     </ul>
     <div class="copyright">
-      <p class="copyright__text"></p>
+      <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
-        <img class="copyright__link-logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        <img src="img/htmlacademy.svg" class="copyright__link-logo" width="27" height="34" alt="HTML Academy">
       </a>
     </div>
   </footer>

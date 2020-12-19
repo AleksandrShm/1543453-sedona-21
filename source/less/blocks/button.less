@@ -1,0 +1,42 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: @white;
+  text-decoration: none;
+  font-family: @font-family;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: @blue;
+
+  &:hover,
+  &:focus {
+    color: @white;
+    background-color: @dark-blue;
+  }
+
+  &:active {
+    color: @white-op30;
+    background-color: @darkest-blue;
+  }
+
+  &:disabled {
+    color: @white;
+    background-color: @light-grey;
+  }
+}
+
+.button--send {
+  border: none;
+  text-transform: uppercase;
+}
+
+.button--ok,
+.button--close {
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
