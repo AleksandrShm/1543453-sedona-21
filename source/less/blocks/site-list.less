@@ -21,7 +21,6 @@
 .site-list__link {
   display: block;
   text-align: center;
-  min-width: 320px;
   padding: 6px 70px 6px 70px;
   box-sizing: border-box;
   text-decoration: none;
@@ -39,5 +38,63 @@
   &:active {
     background-color: @darkest-blue;
     color: @white-op30;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    background-color: @white;
+  }
+
+  .site-list__item {
+    width: 20%;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: auto;
+  }
+
+  .site-list__link {
+    padding: 15px 2px;
+    font-size: 14px;
+    line-height: 26px;
+    color: @black;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: @blue;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: @black-op30;
+      background-color: transparent;
+    }
+  }
+
+  .site-list__link--current {
+    color: @dark-grey;
+
+    &:hover {
+      color: @darkest-grey;
+    }
+
+    &:active {
+      color: @grey-op30;
+    }
   }
 }

@@ -1,3 +1,86 @@
+.slogan {
+  padding-top: 36px;
+  padding-right: 30px;
+  padding-bottom: 27px;
+  padding-left: 30px;
+  text-align: center;
+}
+
+.slogan--form {
+  padding-top: 36px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  border-bottom: 1px solid @light-grey;
+}
+
+.slogan--catalog {
+  padding-top: 36px;
+  padding-right: 25px;
+  padding-bottom: 29px;
+  padding-left: 25px;
+  border-bottom: 1px solid @light-grey;
+}
+
 .slogan__title {
+  margin: 0;
+  padding: 0;
   color: @black;
+}
+
+.slogan__text--catalog {
+  width: 299px;
+}
+
+@media (min-width: @tablet-width) {
+  .slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .slogan--form {
+    padding-top: 73px;
+    padding-bottom: 75px;
+    border-bottom: none;
+  }
+
+  .slogan--catalog {
+    padding-top: 73px;
+    padding-bottom: 70px;
+    border-bottom: none;
+  }
+
+  .slogan__title {
+    width: 435px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slogan__title--form {
+    margin-bottom: 30px;
+  }
+
+  .slogan__title--catalog {
+    margin-bottom: 30px;
+  }
+
+  .slogan__text {
+    width: 490px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slogan__text-break {
+    display: none;
+  }
+
+  .slogan__text--form {
+    width: 435px;
+  }
+
+  .slogan__text--catalog {
+    width: 430px;
+  }
 }

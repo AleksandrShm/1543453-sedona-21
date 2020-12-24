@@ -1,11 +1,23 @@
-.social {
+.social__list {
+  display: flex;
+  width: 155px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.social__item {
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .social__link {
   display: block;
+  width: 46px;
+  height: 48px;
   background-color: @blue;
   text-decoration: none;
 
