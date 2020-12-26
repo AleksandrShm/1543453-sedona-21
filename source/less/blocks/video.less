@@ -1,7 +1,10 @@
 .video {
+  background-color: @white;
+}
+
+.video__wrapper {
   position: relative;
   margin-bottom: 105px;
-  background-color: @white;
 }
 
 .video__description-wrapper {
@@ -83,7 +86,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .video {
+  .video__wrapper {
     margin-bottom: 40px;
     padding: 0 60px;
   }
@@ -147,7 +150,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .video {
+  .video__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;

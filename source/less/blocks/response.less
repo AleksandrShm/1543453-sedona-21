@@ -1,0 +1,44 @@
+.response {
+  background-color: @white;
+}
+
+.response__description {
+  padding-top: 36px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  border-bottom: 1px solid @light-grey;
+  text-align: center;
+}
+
+.response__title {
+  width: 274px;
+  margin: 0;
+  padding: 0;
+  color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .response__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-top: 73px;
+    padding-bottom: 75px;
+    border-bottom: none;
+  }
+
+  .response__title {
+    width: 435px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .response__text {
+    width: 435px;
+    margin: 0;
+    padding: 0;
+  }
+}
