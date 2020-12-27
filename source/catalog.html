@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
-<body class="page-body">
 
+<body class="page-body">
   <header class="page-header">
-    <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="main-nav main-nav--opened">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
@@ -24,76 +26,106 @@
           <a class="site-list__link" href="http://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
-      <a class="page-header__logo">
-      <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="City of Sedona">
+      <a class="main-nav__logo">
+        <img src="https://via.placeholder.com/102x84" class="main-nav__logo-image" width="102" height="84"
+          alt="City of Sedona">
       </a>
     </nav>
     <div class="page-header__intro page-header__intro--small">
-      <img src="https://via.placeholder.com/229x39" class="page-header__text-image page-header__text-image--small" width="229" height="39" alt="Sedona">
+      <img src="https://via.placeholder.com/229x39" class="page-header__text-image page-header__text-image--small"
+        width="229" height="39" alt="Sedona">
     </div>
   </header>
 
   <main class="page-main">
 
-    <section class="slogan">
-      <h2 class="slogan__title title">Фото и видео</h2>
-      <p class="slogan__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    <section class="slogan slogan--catalog">
+      <div class="wrapper">
+        <div class="slogan__wrapper">
+          <h2 class="slogan__title title">Фото и видео</h2>
+          <p class="slogan__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+            политике и экономике.</p>
+        </div>
+      </div>
     </section>
 
     <section class="gallery">
-      <h2 class="visually-hidden">Фотогалерея</h2>
-      <ul class="gallery__list">
-        <li class="gallery__item">
-          <a class="gallery__photo-link" href="blank.html">
-            <img src="https://via.placeholder.com/280x280" class="gallery__photo" width="280" height="280" alt="Дорога, уходящая к горам на горизонте">
-          </a>
-          <h3 class="gallery__title title">Неродные просторы</h3>
-          <cite class="gallery__author">Автор фото: Борис</cite>
-          <button class="gallery__button-like">Понравилось</button>
-          <p class="gallery__counter-like">1350</p>
-        </li>
-        <li class="gallery__item">
-          <a class="gallery__photo-link" href="blank.html">
-            <img src="https://via.placeholder.com/280x280" class="gallery__photo" width="280" height="280" alt="Кактус крупным планом на фоне гор">
-          </a>
-          <h3 class="gallery__title title">Местная растительность</h3>
-          <cite class="gallery__author">Автор фото: Сергей</cite>
-          <button class="gallery__button-like">Понравилось</button>
-          <p class="gallery__counter-like">143</p>
-        </li>
-        <li class="gallery__item">
-          <a class="gallery__photo-link" href="blank.html">
-            <img src="https://via.placeholder.com/280x280" class="gallery__photo" width="280" height="280" alt="Дорога в горах, заросших хвойным лесом">
-          </a>
-          <h3 class="gallery__title title">Дорога на север</h3>
-          <cite class="gallery__author">Автор фото: Петр</cite>
-          <button class="gallery__button-like">Понравилось</button>
-          <p class="gallery__counter-like">96</p>
-        </li>
-        <li class="gallery__item">
-          <a class="gallery__photo-link" href="blank.html">
-            <img src="https://via.placeholder.com/280x280" class="gallery__photo" width="280" height="280" alt="Скала с аркой природного происхождения">
-          </a>
-          <h3 class="gallery__title title">Мост дьявола</h3>
-          <cite class="gallery__author">Автор фото: Антон</cite>
-          <button class="gallery__button-like">Понравилось</button>
-          <p class="gallery__counter-like">254</p>
-        </li>
-      </ul>
+      <div class="wrapper">
+        <h2 class="visually-hidden">Фотогалерея</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item gallery__item--big">
+            <a class="gallery__photo-link" href="blank.html">
+              <img src="https://via.placeholder.com/280x280" class="gallery__photo gallery__photo--big" width="280"
+                height="280" alt="Дорога, уходящая к горам на горизонте">
+            </a>
+            <div class="gallery__description">
+              <h3 class="gallery__title">Неродные просторы</h3>
+              <cite class="gallery__author">Автор фото: Борис</cite>
+              <button class="button gallery__button-like" aria-label="Понравилось">
+                <span class="gallery__counter-like">1350</span>
+              </button>
+            </div>
+          </li>
+          <li class="gallery__item gallery__item--small">
+            <a class="gallery__photo-link" href="blank.html">
+              <img src="https://via.placeholder.com/280x280" class="gallery__photo" width="280" height="280"
+                alt="Кактус крупным планом на фоне гор">
+            </a>
+            <div class="gallery__description">
+              <h3 class="gallery__title">Местная растительность</h3>
+              <cite class="gallery__author">Автор фото: Сергей</cite>
+              <button class="button gallery__button-like" aria-label="Понравилось">
+                <span class="gallery__counter-like">143</span>
+              </button>
+            </div>
+          </li>
+          <li class="gallery__item gallery__item--small">
+            <a class="gallery__photo-link" href="blank.html">
+              <img src="https://via.placeholder.com/280x280" class="gallery__photo" width="280" height="280"
+                alt="Дорога в горах, заросших хвойным лесом">
+            </a>
+            <div class="gallery__description">
+              <h3 class="gallery__title">Дорога на север</h3>
+              <cite class="gallery__author">Автор фото: Петр</cite>
+              <button class="button gallery__button-like" aria-label="Понравилось">
+                <span class="gallery__counter-like">96</span>
+              </button>
+            </div>
+          </li>
+          <li class="gallery__item gallery__item--small">
+            <a class="gallery__photo-link" href="blank.html">
+              <img src="https://via.placeholder.com/280x280" class="gallery__photo" width="280" height="280"
+                alt="Скала с аркой природного происхождения">
+            </a>
+            <div class="gallery__description">
+              <h3 class="gallery__title">Мост дьявола</h3>
+              <cite class="gallery__author">Автор фото: Антон</cite>
+              <button class="button gallery__button-like" aria-label="Понравилось">
+                <span class="gallery__counter-like">254</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="video">
-      <h2 class="video__title">Все еще сомневаетесь?</h2>
-      <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <img src="https://via.placeholder.com/320x201" class="video__image" width="320" height="201" alt="Кадиз видео">
-      <div class="video-controls">
-        <div class="video-controls__range">
-          <!--Здесь будет полоса перемотки видео-->
+      <div class="video__wrapper wrapper">
+        <div class="video__description-wrapper">
+          <h2 class="video__title">Все еще сомневаетесь?</h2>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+          </p>
         </div>
-        <div class="video-controls__options">
-          <button class="video-controls__replay">Повтор</button>
-          <button class="video-controls__subtitles">Субтитры</button>
-          <button class="video-controls__fullscreen">На весь экран</button>
+        <img src="https://via.placeholder.com/320x201" class="video__image" width="320" height="201" alt="Кадиз видео">
+        <div class="video-controls">
+          <div class="video-controls__range">
+            <!--Здесь будет полоса перемотки видео-->
+          </div>
+          <div class="video-controls__options">
+            <button class="video-controls__replay" aria-label="Повтор"></button>
+            <button class="video-controls__subtitles" aria-label="Субтитры"></button>
+            <button class="video-controls__fullscreen" aria-label="На весь экран"></button>
+          </div>
         </div>
       </div>
     </section>
@@ -102,17 +134,26 @@
 
   <footer class="page-footer">
     <a href="blank.html" class="page-footer__hashtag">#VISITSEDONA</a>
-    <ul class="social">
-      <li class="social__item">
-        <a href="http://twitter.com" class="social__link">Twitter</a>
-      </li>
-      <li class="social__item">
-        <a href="http://facebook.com" class="social__link">Facebook</a>
-      </li>
-      <li class="social__item">
-        <a href="http://youtube.com" class="social__link">Youtube</a>
-      </li>
-    </ul>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="http://twitter.com" class="social__link">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="http://facebook.com" class="social__link">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="http://youtube.com" class="social__link">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <div class="copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
@@ -123,4 +164,5 @@
   </footer>
 
 </body>
+
 </html>
