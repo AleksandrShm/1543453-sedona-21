@@ -13,9 +13,19 @@
 .copyright__link {
   display: inline-block;
   vertical-align: middle;
+  margin: 4px 0 -7px 8px;
 }
 
 .copyright__link-logo {
   width: 27px;
   height: 34px;
+
+  &:hover path,
+  &:focus path {
+    fill: @blue;
+  }
+
+  &:active path {
+    fill: @black-op30;
+  }
 }
