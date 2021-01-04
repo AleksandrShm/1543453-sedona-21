@@ -10,7 +10,7 @@
 
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-nav main-nav--opened">
+    <nav class="main-nav main-nav--closed"><!-- main-nav--nojs-->
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -27,12 +27,12 @@
         </li>
       </ul>
       <a class="main-nav__logo">
-        <img src="https://via.placeholder.com/102x84" class="main-nav__logo-image" width="102" height="84"
+        <img src="http://placehold.it/102x84" class="main-nav__logo-image" width="102" height="84"
           alt="City of Sedona">
       </a>
     </nav>
-    <div class="page-header__intro">
-      <img src="https://via.placeholder.com/282x214" class="page-header__text-image" width="282" height="214"
+    <div class="page-header__intro page-header__intro--triangle">
+      <img src="http://placehold.it/282x214" class="page-header__text-image" width="282" height="214"
         alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon Sucks">
     </div>
 
@@ -50,7 +50,7 @@
 
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <div class="advantages__list">
+      <div class="advantages__list advantages__list--triangle">
         <div class="advantages__item-wrapper wrapper">
           <div class="advantages__item">
             <h3 class="advantages__title title">Настоящий городок</h3>
@@ -58,7 +58,7 @@
             <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="advantages__photo-wrapper">
-            <img src="https://via.placeholder.com/520x260" class="advantages__photo" width="520" height="260"
+            <img src="http://placehold.it/520x260" class="advantages__photo" width="520" height="260"
               alt="Здание в городе Седона">
           </div>
         </div>
@@ -87,7 +87,7 @@
             <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <div class="advantages__photo-wrapper">
-            <img src="https://via.placeholder.com/520x260" class="advantages__photo" width="520" height="260"
+            <img src="http://placehold.it/520x260" class="advantages__photo" width="520" height="260"
               alt="Мост Дьявола">
           </div>
         </div>
@@ -129,7 +129,7 @@
       <h2 class="visually-hidden">Как нас найти</h2>
       <!--Здесь будет карта-->
       <div class="map__img-wrapper">
-        <img src="https://via.placeholder.com/320x350" alt="Карта" width="320" height="350" class="map__img">
+        <img src="http://placehold.it/320x350" alt="Карта" width="320" height="350" class="map__img">
       </div>
     </section>
   </main>
@@ -139,17 +139,17 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="http://twitter.com" class="social__link">
+          <a href="http://twitter.com" class="social__link social__link--twitter">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="http://facebook.com" class="social__link">
+          <a href="http://facebook.com" class="social__link social__link--facebook">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="http://youtube.com" class="social__link">
+          <a href="http://youtube.com" class="social__link social__link--youtube">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
@@ -160,7 +160,9 @@
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
-        <img src="img/htmlacademy.svg" class="copyright__link-logo" width="27" height="34" alt="HTML Academy">
+        <svg width="27" height="35" class="copyright__link-logo" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+          </svg>
       </a>
     </div>
   </footer>

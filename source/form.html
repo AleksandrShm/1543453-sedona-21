@@ -10,7 +10,7 @@
 
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-nav main-nav--opened">
+    <nav class="main-nav main-nav--closed"><!-- main-nav--nojs-->
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -27,12 +27,12 @@
         </li>
       </ul>
       <a class="main-nav__logo">
-        <img src="https://via.placeholder.com/102x84" class="main-nav__logo-image" width="102" height="84"
+        <img src="http://placehold.it/102x84" class="main-nav__logo-image" width="102" height="84"
           alt="City of Sedona">
       </a>
     </nav>
-    <div class="page-header__intro page-header__intro--small">
-      <img src="https://via.placeholder.com/229x39" class="page-header__text-image page-header__text-image--small"
+    <div class="page-header__intro page-header__intro--small page-header__intro--triangle">
+      <img src="http://placehold.it/229x39" class="page-header__text-image page-header__text-image--small"
         width="229" height="39" alt="Sedona">
     </div>
   </header>
@@ -45,7 +45,7 @@
           <p class="response__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
             посещенных вами достопримечательностях</p>
         </div>
-        <form class="responce__form form" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="response__form form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="form__fieldset form__fieldset--name">
             <legend class="form__legend form__legend--name">Представьтесь:</legend>
             <ul class="form__list">
@@ -68,7 +68,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend class="form__legend form__legend--contacts">Контактная информация:</legend>
+            <legend class="form__legend form__legend--contacts"><span class="form__legend-line">Контактная информация:</span></legend>
             <ul class="form__list">
               <li class="form__item form__item--contacts form__item--tel">
                 <label class="form__label form__label--contacts" for="tel"><span class="form__label-hidden">Контактный
@@ -94,7 +94,7 @@
                   положительное</label>
               </li>
               <li class="form__item form__item--impression">
-                <input class=" visually-hidden" id="negative" type="radio" name="impression" value="negative">
+                <input class="form__radio visually-hidden" id="negative" type="radio" name="impression" value="negative">
                 <label class="form__label form__label--radio form__label--impression" for="negative">Скорее
                   отрицательное</label>
               </li>
@@ -107,7 +107,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--visited">
-            <legend class="form__legend form__legend--visited">Посещенные достопримечательности:</legend>
+            <legend class="form__legend form__legend--visited"><span class="form__legend-line">Посещенные достопримечательности:</span></legend>
             <ul class="form__list form__list--visited">
               <li class="form__item form__item--visited">
                 <input class="form__checkbox visually-hidden" id="devils-bridge" type="checkbox" name="devils-bridge"
@@ -135,9 +135,9 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--emotions">
-            <legend class="form__legend form__legend--emotions">Опишите свои эмоции:</legend>
+            <legend class="form__legend form__legend--emotions"><span class="form__legend-line">Опишите свои эмоции:</span></legend>
             <label class="visually-hidden" for="feedback">Опишите подробно все свои восторги</label>
-            <textarea class="form__feedback-field" name="feedback" id="feedback" cols="20" rows="6"
+            <textarea class="form__feedback-field" name="feedback" id="feedback" cols="20" rows="5"
               placeholder="Опишите подробно все свои восторги"></textarea>
             <input class="form__button button" type="submit" value="Отправить отзыв">
             <span class="form__footnote"><sup>*</sup> &ndash;Обязательные поля</span>
@@ -153,17 +153,17 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="http://twitter.com" class="social__link">
+          <a href="http://twitter.com" class="social__link social__link--twitter">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="http://facebook.com" class="social__link">
+          <a href="http://facebook.com" class="social__link social__link--facebook">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="http://youtube.com" class="social__link">
+          <a href="http://youtube.com" class="social__link social__link--youtube">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
@@ -174,7 +174,9 @@
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
-        <img src="img/htmlacademy.svg" class="copyright__link-logo" width="27" height="34" alt="HTML Academy">
+        <svg width="27" height="35" class="copyright__link-logo" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+          </svg>
       </a>
     </div>
   </footer>

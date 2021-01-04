@@ -3,15 +3,15 @@
 }
 
 .slogan__wrapper {
-  padding-top: 36px;
+  padding-top: 32px;
   padding-right: 30px;
-  padding-bottom: 27px;
+  padding-bottom: 31px;
   padding-left: 30px;
   text-align: center;
 }
 
 .slogan--catalog .slogan__wrapper {
-  padding-top: 36px;
+  padding-top: 30px;
   padding-right: 23px;
   padding-bottom: 29px;
   padding-left: 23px;
@@ -20,8 +20,20 @@
 
 .slogan__title {
   margin: 0;
+  margin-bottom: 31px;
   padding: 0;
   color: @black;
+}
+
+.slogan--catalog .slogan__title {
+  margin-bottom: 25px;
+}
+
+.slogan__text {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -29,19 +41,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding-top: 42px;
+    padding-right: 0;
+    padding-bottom: 53px;
+    padding-left: 0;
   }
 
   .slogan--catalog .slogan__wrapper {
-    padding-top: 73px;
-    padding-bottom: 70px;
+    padding-top: 61px;
+    padding-bottom: 75px;
     border-bottom: none;
   }
 
   .slogan__title {
     width: 435px;
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 31px;
     padding: 0;
   }
 
@@ -61,5 +76,17 @@
 
   .slogan--catalog .slogan__text {
     width: 430px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slogan__wrapper {
+    padding-top: 53px;
+    padding-bottom: 42px;
+  }
+
+  .slogan--catalog .slogan__wrapper {
+    padding-top: 99px;
+    padding-bottom: 77px;
   }
 }
