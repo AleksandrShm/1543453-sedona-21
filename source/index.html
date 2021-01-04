@@ -27,12 +27,16 @@
         </li>
       </ul>
       <a class="main-nav__logo">
-        <img src="http://placehold.it/102x84" class="main-nav__logo-image" width="102" height="84"
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" class="main-nav__logo-image" width="102" height="84"
           alt="City of Sedona">
+        </picture>
       </a>
     </nav>
     <div class="page-header__intro page-header__intro--triangle">
-      <img src="http://placehold.it/282x214" class="page-header__text-image" width="282" height="214"
+      <img src="img/text-sedona-index.svg" class="page-header__text-image" width="282" height="214"
         alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon Sucks">
     </div>
 
@@ -58,8 +62,12 @@
             <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="advantages__photo-wrapper">
-            <img src="http://placehold.it/520x260" class="advantages__photo" width="520" height="260"
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" class="advantages__photo" width="520" height="260"
               alt="Здание в городе Седона">
+            </picture>
           </div>
         </div>
       </div>
@@ -87,8 +95,12 @@
             <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <div class="advantages__photo-wrapper">
-            <img src="http://placehold.it/520x260" class="advantages__photo" width="520" height="260"
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/index-bridge-desktop@1x.jpg 1x, img/index-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/index-bridge-tablet@1x.jpg 1x, img/index-bridge-tablet@2x.jpg 2x">
+              <img src="img/index-bridge-mobile@1x.jpg" srcset="img/index-bridge-mobile@2x.jpg 2x" class="advantages__photo" width="520" height="260"
               alt="Мост Дьявола">
+            </picture>
           </div>
         </div>
       </div>

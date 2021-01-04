@@ -72,10 +72,9 @@
 
 .advantages__photo {
   display: block;
-  //width: 100%;
-  //height: auto;
-  width: 320px;
-  height: 260px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -104,11 +103,6 @@
 @media (min-width: @tablet-width) {
   .advantages__photo-wrapper {
     width: 512px;
-  }
-
-  .advantages__photo {
-    width: 512px;
-    height: 256px;
   }
 
   .advantages__features {
@@ -180,7 +174,7 @@
 @media (min-width: @desktop-width) {
   .advantages__photo-wrapper {
     width: 800px;
-    height: 256px;
+    //height: 256px;
     overflow: hidden;
   }
 
