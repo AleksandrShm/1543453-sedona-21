@@ -27,12 +27,16 @@
         </li>
       </ul>
       <a class="main-nav__logo">
-        <img src="http://placehold.it/102x84" class="main-nav__logo-image" width="102" height="84"
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" class="main-nav__logo-image" width="102" height="84"
           alt="City of Sedona">
+        </picture>
       </a>
     </nav>
     <div class="page-header__intro page-header__intro--small page-header__intro--triangle">
-      <img src="http://placehold.it/229x39" class="page-header__text-image page-header__text-image--small"
+      <img src="img/text-sedona.svg" class="page-header__text-image page-header__text-image--small"
         width="229" height="39" alt="Sedona">
     </div>
   </header>

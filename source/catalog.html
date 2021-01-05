@@ -27,12 +27,16 @@
         </li>
       </ul>
       <a class="main-nav__logo">
-        <img src="http://placehold.it/102x84" class="main-nav__logo-image" width="102" height="84"
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" class="main-nav__logo-image" width="102" height="84"
           alt="City of Sedona">
+        </picture>
       </a>
     </nav>
     <div class="page-header__intro page-header__intro--small page-header__intro--triangle">
-      <img src="http://placehold.it/229x39" class="page-header__text-image page-header__text-image--small"
+      <img src="img/text-sedona.svg" class="page-header__text-image page-header__text-image--small"
         width="229" height="39" alt="Sedona">
     </div>
   </header>
@@ -55,8 +59,11 @@
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--big">
             <a class="gallery__photo-link" href="blank.html">
-              <img src="http://placehold.it/280x280" class="gallery__photo gallery__photo--big" width="280"
-                height="280" alt="Дорога, уходящая к горам на горизонте">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" class="gallery__photo gallery__photo--big" width="280" height="280" alt="Дорога, уходящая к горам на горизонте">
+              </picture>
             </a>
             <div class="gallery__description">
               <h3 class="gallery__title">Неродные просторы</h3>
@@ -68,8 +75,11 @@
           </li>
           <li class="gallery__item gallery__item--small">
             <a class="gallery__photo-link" href="blank.html">
-              <img src="http://placehold.it/280x280" class="gallery__photo" width="280" height="280"
-                alt="Кактус крупным планом на фоне гор">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" class="gallery__photo" width="280" height="280" alt="Кактус крупным планом на фоне гор">
+              </picture>
             </a>
             <div class="gallery__description">
               <h3 class="gallery__title">Местная растительность</h3>
@@ -81,8 +91,11 @@
           </li>
           <li class="gallery__item gallery__item--small">
             <a class="gallery__photo-link" href="blank.html">
-              <img src="http://placehold.it/280x280" class="gallery__photo" width="280" height="280"
-                alt="Дорога в горах, заросших хвойным лесом">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" class="gallery__photo" width="280" height="280" alt="Дорога в горах, заросших хвойным лесом">
+              </picture>
             </a>
             <div class="gallery__description">
               <h3 class="gallery__title">Дорога на север</h3>
@@ -94,8 +107,11 @@
           </li>
           <li class="gallery__item gallery__item--small">
             <a class="gallery__photo-link" href="blank.html">
-              <img src="http://placehold.it/280x280" class="gallery__photo" width="280" height="280"
-                alt="Скала с аркой природного происхождения">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" class="gallery__photo" width="280" height="280" alt="Скала с аркой природного происхождения">
+              </picture>
             </a>
             <div class="gallery__description">
               <h3 class="gallery__title">Мост дьявола</h3>
@@ -116,7 +132,11 @@
           <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
         </div>
-        <img src="http://placehold.it/320x201" class="video__image" width="320" height="201" alt="Кадр из видео">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" class="video__image" width="320" height="201" alt="Кадр из видео">
+        </picture>
         <div class="video-controls">
           <div class="video-controls__range">
             <div class="video-controls__scale"></div>
