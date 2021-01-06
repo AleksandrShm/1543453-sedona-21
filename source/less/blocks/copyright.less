@@ -14,18 +14,19 @@
   display: inline-block;
   vertical-align: middle;
   margin: 4px 0 -7px 8px;
+  fill: @black;
+
+  &:hover,
+  &:focus {
+    fill: @blue;
+  }
+
+  :active {
+    fill: @black-op30;
+  }
 }
 
 .copyright__link-logo {
   width: 27px;
   height: 34px;
-
-  &:hover path,
-  &:focus path {
-    fill: @blue;
-  }
-
-  &:active path {
-    fill: @black-op30;
-  }
 }

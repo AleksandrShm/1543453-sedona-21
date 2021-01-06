@@ -60,6 +60,10 @@
           <li class="gallery__item gallery__item--big">
             <a class="gallery__photo-link" href="blank.html">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-1-mobile@1x.webp 1x, img/photo-1-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
                 <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" class="gallery__photo gallery__photo--big" width="280" height="280" alt="Дорога, уходящая к горам на горизонте">
@@ -76,6 +80,10 @@
           <li class="gallery__item gallery__item--small">
             <a class="gallery__photo-link" href="blank.html">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-2-mobile@1x.webp 1x, img/photo-2-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                 <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" class="gallery__photo" width="280" height="280" alt="Кактус крупным планом на фоне гор">
@@ -92,6 +100,10 @@
           <li class="gallery__item gallery__item--small">
             <a class="gallery__photo-link" href="blank.html">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-3-mobile@1x.webp 1x, img/photo-3-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                 <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" class="gallery__photo" width="280" height="280" alt="Дорога в горах, заросших хвойным лесом">
@@ -108,6 +120,10 @@
           <li class="gallery__item gallery__item--small">
             <a class="gallery__photo-link" href="blank.html">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.webp 1x, img/photo-4-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-4-mobile@1x.webp 1x, img/photo-4-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
                 <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" class="gallery__photo" width="280" height="280" alt="Скала с аркой природного происхождения">
@@ -133,6 +149,10 @@
           </p>
         </div>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
           <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" class="video__image" width="320" height="201" alt="Кадр из видео">
@@ -143,9 +163,21 @@
             <button class="video-controls__toggle" aria-label="Перемотать видео"></button>
           </div>
           <div class="video-controls__options">
-            <button class="video-controls__replay" aria-label="Повтор"></button>
-            <button class="video-controls__subtitles" aria-label="Субтитры"></button>
-            <button class="video-controls__fullscreen" aria-label="На весь экран"></button>
+            <button class="video-controls__replay" aria-label="Повтор">
+              <svg class="video-controls__replay-icon" width="16px" height="20px">
+                <use xlink:href="img/sprite.svg#icon-replay"></use>
+              </svg>
+            </button>
+            <button class="video-controls__subtitles" aria-label="Субтитры">
+              <svg class="video-controls__subtitles-icon" width="32px" height="22px">
+                <use xlink:href="img/sprite.svg#icon-subtitles"></use>
+              </svg>
+            </button>
+            <button class="video-controls__fullscreen" aria-label="На весь экран">
+              <svg class="video-controls__fullscreen-icon" width="20px" height="20px">
+                <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -179,9 +211,9 @@
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
-        <svg width="27" height="35" class="copyright__link-logo" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
-          </svg>
+        <svg width="27" height="35" class="copyright__link-logo">
+          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>
