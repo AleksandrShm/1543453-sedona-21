@@ -1,25 +1,56 @@
 .map__img-wrapper {
-  width: 320px;
+  position: relative;
+  width: 100%;
   height: 350px;
   overflow: hidden;
+  background-color: @lightest-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    width: 27px;
+    height: 27px;
+    border: 5px solid @white;
+    border-radius: 50%;
+    background-color: @blue;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .map__img {
+  margin: 0 auto;
   display: block;
-  width: 100%;
-  height: auto;
+  width: 320px;
+  height: 350px;
 }
 
 @media (min-width: @tablet-width) {
-  .map__img-wrapper {
+  .map__img {
     width: 768px;
-    height: 350px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .map__img-wrapper {
+  .map__img {
     width: 1200px;
-    height: 350px;
   }
+}
+
+.map--nojs .map__interactive {
+  display: none;
+}
+
+.map--nojs .map__img-wrapper {
+  display: block;
+}
+
+.map--js .map__interactive {
+  display: block;
+}
+
+.map--js .map__img-wrapper {
+  display: none;
 }
