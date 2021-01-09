@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-nav main-nav--closed"><!-- main-nav--nojs-->
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -145,11 +145,19 @@
 
     </section>
 
-    <section class="map">
+    <section class="map map--nojs">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <!--Здесь будет карта-->
+      <iframe class="map__interactive" src="https://www.google.com/maps/d/embed?mid=1I6XM_9vssC8_vSRYS6UK4CvLvC_bdTHv" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <div class="map__img-wrapper">
-        <img src="http://placehold.it/320x350" alt="Карта" width="320" height="350" class="map__img">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 786px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+          <img src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" alt="Карта" width="320" height="350" class="map__img">
+        </picture>
       </div>
     </section>
   </main>
@@ -186,7 +194,8 @@
       </a>
     </div>
   </footer>
-
+  <script src="js/menu.min.js"></script>
+  <script src="js/map.min.js"></script>
 </body>
 
 </html>
