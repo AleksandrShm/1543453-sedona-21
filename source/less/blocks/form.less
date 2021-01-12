@@ -257,6 +257,13 @@
   transform: rotate(-45deg);
 }
 
+.form__checkbox:hover + .form__label--checkbox::before,
+.form__checkbox:focus + .form__label--checkbox::before,
+.form__radio:hover .form__label--radio::before,
+.form__radio:focus .form__label--radio::before {
+  background-color: @light-grey;
+}
+
 .form__checkbox:checked + .form__label--checkbox:active::after {
   opacity: 0.3;
 }
